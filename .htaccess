@@ -1,0 +1,9 @@
+#to remove .php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+#to change $_GET with their parameter
+php_flag register_globals 0
