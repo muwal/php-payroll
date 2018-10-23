@@ -54,44 +54,42 @@
 			</div>
 		</div>
 	</div>
+</div>
+<!-- Modal -->
+<div class="modal modal-right fade" id="modal-right" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Entry Pajak Tanggungan</h5>
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form class="form-type-material">
+					<div class="form-group">
+						<label class="require">Keterangan</label>
+						<input type="text" name="" value="" class="form-control" required="true" autocomplete="off" autofocus="true">
+					</div>
 
-	<!-- Modal -->
-	<div class="modal modal-right fade" id="modal-right" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Entry Pajak Tanggungan</h5>
-					<button type="button" class="close" data-dismiss="modal">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form class="form-type-material">
-						<div class="form-group">
-							<label class="require">Keterangan</label>
-							<input type="text" name="" value="" class="form-control" required="true" autocomplete="off" autofocus="true">
-						</div>
-
-						<div class="form-group">
-							<!-- <label class="require">PTKP</label> -->
-							<div class="input-group">
-								<div class="input-group-input">
-									<input type="number" min="0" required="true" class="form-control" aria-label="PTKP">
-									<label class="require">PTKP</label>
-								</div>
-								<div class="input-group-prepend">
-									<span class="input-group-text">IDR</span>
-								</div>
+					<div class="form-group">
+						<!-- <label class="require">PTKP</label> -->
+						<div class="input-group">
+							<div class="input-group-input">
+								<input type="number" min="0" required="true" class="form-control" aria-label="PTKP">
+								<label class="require">PTKP</label>
+							</div>
+							<div class="input-group-prepend">
+								<span class="input-group-text">IDR</span>
 							</div>
 						</div>
-					</form>
-				</div>
-				<div class="modal-footer modal-footer-uniform">
-					<button type="button" class="btn btn-bold btn-pure btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-bold btn-pure btn-primary">Save changes</button>
-				</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer modal-footer-uniform">
+				<button type="button" class="btn btn-bold btn-pure btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-bold btn-pure btn-primary">Save changes</button>
 			</div>
 		</div>
 	</div>
-</div>
 </div>

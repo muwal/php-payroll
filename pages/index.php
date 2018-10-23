@@ -70,6 +70,30 @@
 						<!-- <span class="arrow"></span> -->
 					</a>
 				</li>
+
+				<li class="menu-item">
+					<a class="menu-link" href="#">
+						<span class="icon fa fa-calendar-check-o"></span>
+						<span class="title">Absen</span>
+						<span class="arrow"></span>
+					</a>
+
+					<ul class="menu-submenu">
+						<li class="menu-item">
+							<a class="menu-link" href="?page=dataabsennormal">
+								<span class="dot"></span>
+								<span class="title">Jam Kerja Normal</span>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a class="menu-link" href="#">
+								<span class="dot"></span>
+								<span class="title">Jam Kerja Lembur</span>
+							</a>
+						</li>
+					</ul>
+				</li>
 				<!-- <li class="menu-category">pages</li> -->
 
 
@@ -393,6 +417,14 @@
 
 				case 'inputgruplembur':
 					include 'input_gruplembur.php';
+					break;
+
+				case 'dataabsennormal':
+					include 'data_absennormal.php';
+					break;
+
+				case 'dataabsenlembur':
+					include 'data_absenlembur.php';
 					break;
 				
 				case 'dashboard':

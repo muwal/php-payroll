@@ -22,7 +22,7 @@
 						<div class="dropdown-menu dropdown-menu-right">
 							<a class="dropdown-item" href="#">Edit jadwal</a>
 							<a class="dropdown-item" href="#">Move member</a>
-							<a class="dropdown-item" href="#">Tambah member</a>
+							<a class="dropdown-item" style="cursor: pointer" data-toggle="modal" data-target="#modal-right">Tambah member</a>
 							<a class="dropdown-item" href="#">Hapus grup</a>
 						</div>
 					</ul>
@@ -84,6 +84,44 @@
 						</table>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal modal-right fade" id="modal-right" tabindex="-1">
+	<div class="modal-dialog w-600px">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Tambah member grup</h5>
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="table-responsive-md">
+        			<table class="table table-striped table-bordered" cellspacing="0" data-provide="datatables" data-ajax="">
+        				<thead>
+        					<tr>
+        						<th>#</th>
+        						<th>NIK</th>
+        						<th>Nama</th>
+        					</tr>
+        				</thead>
+        				<tbody>
+        					<tr>
+        						<td></td>
+        						<td></td>
+        						<td></td>
+        					</tr>
+        				</tbody>
+        			</table>
+        		</div>
+			</div>
+			<div class="modal-footer modal-footer-uniform">
+				<button type="button" class="btn btn-bold btn-pure btn-secondary" data-dismiss="modal">tutup</button>
+				<button type="button" class="btn btn-bold btn-pure btn-primary">simpan</button>
 			</div>
 		</div>
 	</div>
