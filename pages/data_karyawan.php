@@ -1,7 +1,8 @@
+<div class="main-content">
+	
 
-
-<div class="row">
-	<div class="col-12">
+	<div class="row">
+		<div class="col-12">
 		<!--
         |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
         | Ajax sourced data
@@ -64,5 +65,6 @@
         		</div>
         	</div>
         </div>
-	</div>
+    </div>
+</div>
 </div>

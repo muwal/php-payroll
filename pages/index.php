@@ -56,24 +56,55 @@
 
 				<li class="menu-category">main menu</li>
 
-				<li class="menu-item active">
+				<li class="menu-item">
 					<a class="menu-link" href="?page=dashboard">
 						<span class="icon fa fa-home"></span>
 						<span class="title">Dashboard</span>
 					</a>
 				</li>
 
-				<li class="menu-category">pages</li>
-
 				<li class="menu-item">
 					<a class="menu-link" href="?page=datakaryawan">
 						<span class="icon ti-user"></span>
-						<span class="title">Data Karyawan</span>
+						<span class="title">Karyawan</span>
 						<!-- <span class="arrow"></span> -->
 					</a>
 				</li>
+				<!-- <li class="menu-category">pages</li> -->
+
 
 				<li class="menu-category">setting</li>
+				<li class="menu-item">
+					<a class="menu-link" href="#">
+						<span class="icon ion-ios-timer-outline"></span>
+						<span class="title">Jadwal Kerja</span>
+						<span class="arrow"></span>
+					</a>
+
+					<ul class="menu-submenu">
+						<li class="menu-item">
+							<a class="menu-link" href="?page=grupkerja">
+								<span class="dot"></span>
+								<span class="title">Grup Kerja</span>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a class="menu-link" href="#">
+								<span class="dot"></span>
+								<span class="title">Grup Lembur</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="menu-item">
+					<a class="menu-link" href="?page=datatanggungan">
+						<span class="icon pe-7s-cash"></span>
+						<span class="title">Pajak Tanggungan</span>
+						<!-- <span class="arrow"></span> -->
+					</a>
+				</li>
 
 				<li class="menu-item">
 					<a class="menu-link" href="#">
@@ -324,26 +355,39 @@
 
 	<!-- Main container -->
 	<main class="main-container">
+		<?php  
+			$current_page = isset($_GET['page']) ? $_GET['page'] : null;
 
-		<div class="main-content">
-			<?php  
-				$current_page = isset($_GET['page']) ? $_GET['page'] : null;
+			switch ($current_page) {
+				case 'datakaryawan':
+					include 'data_karyawan.php';
+					break;
 
-				switch ($current_page) {
-					case 'datakaryawan':
-						include 'data_karyawan.php';
-						break;
+				case 'inputkaryawan':
+					include 'input_karyawan.php';
+					break;
 
-					case 'inputkaryawan':
-						include 'input_karyawan.php';
-						break;
-					
-					case 'dashboard':
-						default:
-						include 'dashboard.php';
-				}
-			?>
-		</div><!--/.main-content -->
+				case 'datatanggungan':
+					include 'data_tanggungan.php';
+					break;
+
+				case 'grupkerja':
+					include 'data_grupkerja.php';
+					break;
+
+				case 'detailgrupkerja':
+					include 'detail_grupkerja.php';
+					break;
+
+				case 'inputgrupkerja':
+					include 'input_grupkerja.php';
+					break;
+				
+				case 'dashboard':
+					default:
+					include 'dashboard.php';
+			}
+		?>
 
 
 		<!-- Footer -->

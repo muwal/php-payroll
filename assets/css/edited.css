@@ -1,3 +1,11 @@
 .flexbox {
 	justify-content: flex-end;
 }
+
+.sidebar-header {
+	background-color: #38c0d0;
+}
+
+.header {
+	margin-bottom: 0px;
+}
