@@ -90,7 +90,7 @@
 						</li>
 
 						<li class="menu-item">
-							<a class="menu-link" href="#">
+							<a class="menu-link" href="?page=gruplembur">
 								<span class="dot"></span>
 								<span class="title">Grup Lembur</span>
 							</a>
@@ -381,6 +381,18 @@
 
 				case 'inputgrupkerja':
 					include 'input_grupkerja.php';
+					break;
+
+				case 'gruplembur':
+					include 'data_gruplembur.php';
+					break;
+
+				case 'detailgruplembur':
+					include 'detail_gruplembur.php';
+					break;
+
+				case 'inputgruplembur':
+					include 'input_gruplembur.php';
 					break;
 				
 				case 'dashboard':
