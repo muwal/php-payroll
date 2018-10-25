@@ -80,6 +80,13 @@
 
 					<ul class="menu-submenu">
 						<li class="menu-item">
+							<a class="menu-link" href="?page=dataabsenkaryawan">
+								<span class="dot"></span>
+								<span class="title">Absen Karyawan</span>
+							</a>
+						</li>
+
+						<li class="menu-item">
 							<a class="menu-link" href="?page=dataabsennormal">
 								<span class="dot"></span>
 								<span class="title">Jam Kerja Normal</span>
