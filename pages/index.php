@@ -426,6 +426,10 @@
 				case 'dataabsenlembur':
 					include 'data_absenlembur.php';
 					break;
+
+				case 'dataabsenkaryawan':
+					include 'data_absenkaryawan.php';
+					break;
 				
 				case 'dashboard':
 					default:
