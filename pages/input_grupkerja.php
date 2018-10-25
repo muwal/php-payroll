@@ -74,7 +74,7 @@
 									<div class="col-md-4 col-12">
 										<div class="form-group">
 											<label class="">Hari</label>
-											<select name="" data-provide="selectpicker" class="form-control" data-live-search="true" title="Pilih hari" multiple="" data-max-option="7">
+											<select name="hari" multiple data-live-search="true" class="selectpicker form-control" title="Pilih hari" data-max-option="7">
 												<option value="">1</option>
 												<option value="">2</option>
 											</select>
